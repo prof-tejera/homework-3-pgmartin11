@@ -2,23 +2,27 @@ import RadioButton from "components/RadioButton/RadioButton";
 import "./RadioButtons.css";
 
 const RadioButtons = () => {
+    const radioBtnData = [
+    { 
+      label: 'Apple',
+      selected: true,
+      active: true
+    },
+    {
+      label: 'Pear',
+      selected: false,
+      active: true      
+    },
+    {
+      label: 'Orange',
+      selected: false,
+      active: false         
+    }    
+  ];
+
   return (
     <>
-      <RadioButton
-        selected={true}
-        disabled={false}
-        text="Apple"
-      />
-      <RadioButton
-        selected={false}
-        disabled={false}
-        text="Pear"
-      />
-      <RadioButton
-        selected={false}
-        disabled={true}
-        text="Orange"
-      />
+     { radioBtnData .map((radioBtn, i) => <RadioButton key={i} {...radioBtn} />) }
     </>
   );
 };

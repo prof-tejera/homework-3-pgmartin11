@@ -1,11 +1,19 @@
+
 import "./RadioButton.css";
 
-const RadioButton = ({ selected, active, text }) => {
+const RadioButton = ({ label, selected, active }) => {
+  let cName = '';
+
+  if (active) {
+    cName = selected ? 'selected' : '';
+  }
+
   return (
     <button
-      className={selected ? "selected" : ""}
+      className={cName}
+      disabled={!active }
     >
-      {text}
+      {label}
     </button>
   );
 };
