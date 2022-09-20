@@ -1,0 +1,26 @@
+.Rbtn {
+    border: 1px solid gray;
+    border-left: none;
+    color: black;
+    background-color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Rbtn.selected {
+    border: none;
+    color: #fff;
+    background-color: rgb(71, 145, 241);
+    font-weight: bold;
+}
+
+.Rbtn:disabled {
+    color: gray;
+    background-color: #dcdcdc;
+}

@@ -1,4 +1,4 @@
-const Input = ({id, label, type, name}) => { 
+const Input = ({id, label, type, name, required}) => { 
   let comp;
 
   switch (type) {
@@ -14,9 +14,11 @@ const Input = ({id, label, type, name}) => {
       comp = <input type={type} id={id} />;
       break;  
     default:
+      //const reqHtml = required ? '<span>*</span>' : '';
+      const reqHtml = required ? '*' : '';
       comp = (
         <>
-          <label htmlFor={id}>{label}:</label>
+          <label htmlFor={id}>{reqHtml}{label}:</label>
           <input type={type} id={id} name={name} /><br/>
         </>
       );

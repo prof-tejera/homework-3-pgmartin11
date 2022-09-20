@@ -9,31 +9,35 @@ const LoginForm = () => {
       type: 'text',
       id: 'fname',
       name: 'fname',
-      label: 'First name'
+      label: 'First name',
+      required: true
     },
     {
       type: 'password',
       id: 'passwd',
       name: 'passwd',
-      label: 'Password'
+      label: 'Password',
+      required: true
     },  
     {
       type: 'checkbox',
       id: 'remember-me',
       name: 'remember',
-      label: 'Remember me'
+      label: 'Remember me',
+      required: ''
     },
     {
       type: 'submit',
       id: '',
       name: '',
-      label: ''      
+      label: '',
+      required: ''   
     }   
   ];
 
   return (
     <Form action="javascript:void(0);">
-      { formElements.map(({type, id, name, label}, i) => <Input key={i} type={type} id={id} name={name} label={label} />) }
+      { formElements.map(({type, id, name, label, required}, i) => <Input key={i} type={type} id={id} name={name} label={label} required={required} />) }
     </Form>
   );
 }
