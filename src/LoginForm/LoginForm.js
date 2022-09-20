@@ -33,7 +33,7 @@ const LoginForm = () => {
 
   return (
     <Form action="javascript:void(0);">
-      { formElements.map(({type, id, name, label}) => <Input key={id} type={type} id={id} name={name} label={label} />) }
+      { formElements.map(({type, id, name, label}, i) => <Input key={i} type={type} id={id} name={name} label={label} />) }
     </Form>
   );
 }
