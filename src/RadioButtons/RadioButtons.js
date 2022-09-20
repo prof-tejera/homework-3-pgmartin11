@@ -16,7 +16,7 @@ const RadioButtons = () => {
     {
       label: 'Orange',
       selected: false,
-      active: false         
+      active: false      
     }    
   ];
 

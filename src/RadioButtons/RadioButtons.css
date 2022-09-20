@@ -1,4 +1,4 @@
-.Rbtn {
+div .Rbtn {
     border: 1px solid gray;
     border-left: none;
     color: black;
@@ -13,7 +13,11 @@
     font-weight: bold;
 }
 
-.Rbtn.selected {
+div .Rbtn:first-of-type {
+    border-left: 1px solid gray;
+}
+
+div .Rbtn.selected {
     border: none;
     color: #fff;
     background-color: rgb(71, 145, 241);

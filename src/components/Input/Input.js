@@ -14,11 +14,10 @@ const Input = ({id, label, type, name, required}) => {
       comp = <input type={type} id={id} />;
       break;  
     default:
-      //const reqHtml = required ? '<span>*</span>' : '';
-      const reqHtml = required ? '*' : '';
+      //const reqHtml = required ? <span>*</span> : '';
       comp = (
         <>
-          <label htmlFor={id}>{reqHtml}{label}:</label>
+          <label htmlFor={id}>{required ? <span>*</span> : ''}{label}:</label>
           <input type={type} id={id} name={name} /><br/>
         </>
       );

@@ -13,6 +13,11 @@ label {
     margin-bottom: 5px;
 }
 
+label > span {
+    color: red;
+    margin-right: 2px;
+}
+
 input[type="submit"] {
     font-size: 16px;
     margin-top: 2em;
