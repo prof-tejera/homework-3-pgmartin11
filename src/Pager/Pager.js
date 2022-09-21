@@ -21,11 +21,11 @@ const Pager = () => {
   ];
 
   return (
-    <>
+    <div className="page-wrapper">
       <span>&lt;</span>
       { pagerMap[currVal].map((itemEl, i) => <PagerItem key={i} itemNumber={itemEl} currItem={currVal} />) } 
       <span>&gt;</span>
-    </>
+    </div>
   );
 };   
 
