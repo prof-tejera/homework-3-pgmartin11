@@ -10,7 +10,7 @@ const RadioButton = ({ label, selected, active }) => {
 
   return (
     <button
-      className={'Rbtn ' + cName}
+      className={`Rbtn ${cName}`}
       disabled={!active }
     >
       {label}

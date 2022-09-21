@@ -1,6 +1,6 @@
 const PagerItem = ({itemNumber, currItem}) => { 
-  const spanClass = currItem === itemNumber ? 'current-item' : '';
-  const itemVal = itemNumber ? itemNumber : '...';
+  const spanClass = currItem === itemNumber ? 'current-item' : '',
+    itemVal = itemNumber ? itemNumber : '...';
 
   return <span className={spanClass}>{itemVal}</span>;
 };

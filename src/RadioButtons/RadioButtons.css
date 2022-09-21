@@ -24,7 +24,7 @@ div .Rbtn.selected {
     font-weight: bold;
 }
 
-.Rbtn:disabled {
+div .Rbtn:disabled {
     color: gray;
     background-color: #dcdcdc;
 }

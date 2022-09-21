@@ -3,8 +3,8 @@ import PagerItem from "components/PagerItem/PagerItem";
 import "./Pager.css";
 
 const Pager = () => {
-  const currVal = 2;
-  const pagerMap = [
+  const currVal = 2,
+      pagerMap = [
     [],
     [1,2,3,null,12], //1
     [1,2,3,null,12], //2
