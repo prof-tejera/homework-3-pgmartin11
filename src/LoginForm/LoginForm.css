@@ -1,0 +1,32 @@
+input:not([type="checkbox"]) {
+    display: block;
+    height: 2em;
+    width: 20em;
+    margin-top: 5px;
+}
+
+#remember-me {
+    margin-right: 5px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+label > span {
+    color: red;
+    margin-right: 2px;
+}
+
+input[type="submit"] {
+    font-size: 16px;
+    margin-top: 2em;
+    border:  none;
+    font-size: 16px;
+    padding: 10px 30px;
+    width: 7em;
+    height: 2.5em;
+    color: #FFF;
+    cursor: pointer;
+    background-color: rgb(71, 145, 241);
+}
