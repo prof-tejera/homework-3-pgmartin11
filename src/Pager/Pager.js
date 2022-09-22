@@ -3,6 +3,12 @@ import PagerItem from "components/PagerItem/PagerItem";
 import "./Pager.css";
 
 const Pager = () => {
+
+  /*
+   * Data below used for depicting the pager state. In working code this could be implemented programmatically 
+   * by an externals function and passed in to the component as props.
+   *
+   */
   const currVal = 2,
       pagerMap = [
     [],
@@ -19,12 +25,15 @@ const Pager = () => {
     [8,9,10,11,12], //11
     [8,9,10,11,12]  //12
   ];
+  const leftArrowState = '',
+    rightArrowState = 'advance';
+
 
   return (
     <div className="page-wrapper">
-      <span>&lt;</span>
+      <span className={leftArrowState}>&lt;</span>
       { pagerMap[currVal].map((itemEl, i) => <PagerItem key={i} itemNumber={itemEl} currItem={currVal} />) } 
-      <span>&gt;</span>
+      <span className={rightArrowState}>&gt;</span>
     </div>
   );
 };   

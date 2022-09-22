@@ -29,3 +29,9 @@
 .page-wrapper  span:last-child {
     margin-left: 0.5em;
 }
+
+.page-wrapper span.advance {
+    background-color: #dcdcdc;
+    border-radius: 0.25em;
+    padding: 0.2em 0.5em;
+}
